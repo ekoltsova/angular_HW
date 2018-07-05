@@ -1,0 +1,13 @@
+<div class="product">
+  product component!
+  <div>Name: {{name}}</div>
+  <div>Price: {{price}}</div>
+  <div>Products: 
+    <span *ngFor="let product of products">{{' ' + product}}</span>
+  </div>
+  <button 
+    type="button"
+    (click)='onBuy(name)'>
+    Buy
+  </button>
+</div>

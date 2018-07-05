@@ -1,0 +1,28 @@
+<div class="cart">
+    cart component!
+    <div *ngIf="products.length; else emptyBlock">
+      <div *ngFor="let product of products" >
+        <div *ngIf="product.isAvailable" class="cart__item">
+          <div> 
+            Name: {{product.name}} 
+          </div>
+          <div>
+            Description: {{product.description}} 
+          </div>
+          <div>
+            Price: {{product.price}} 
+          </div>
+          <div>
+            Category: {{product.category}} 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ng-template #emptyBlock>
+      <div class="cart__empty_message">
+        Your cart is empty
+      </div>
+    </ng-template>
+  </div>
+  

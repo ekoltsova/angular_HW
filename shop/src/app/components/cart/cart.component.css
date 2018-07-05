@@ -1,0 +1,10 @@
+.cart{
+    margin: 10px;
+}
+.cart__item{
+    margin: 5px;
+    border: 2px solid blue;
+}
+.cart__empty_message{
+    color: red;
+}

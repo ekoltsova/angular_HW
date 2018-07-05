@@ -1,0 +1,7 @@
+.product-list{
+    margin: 10px;
+}
+.product-list__item{
+    margin: 5px;
+    border: 2px solid black;
+}

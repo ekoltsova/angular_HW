@@ -10,7 +10,6 @@ export class CartService {
   constructor() { }
 
   getAddedProducts(): Array<IProduct> {
-      return [];
     return [
       new Product('product1', 'it is product', 10, Category.book, true),
       new Product('product2', 'it is product', 10, Category.book, false),
